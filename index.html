@@ -1,0 +1,57 @@
+<!DOCTYPE html> <html id='html' lang='en' dir='ltr'>
+	<head id='core'> <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/x-icon" href="assets/icon.ico">
+		<title id="title0">VA二l lA</title>
+		<meta name='description' content='Build websites right on your phone with VA二l lA - A hyperlight, very simple and minimalistic web studio/frontend framework!' />
+		<meta name='keywords' content='html, css, js, editor, web studio, web editor, website constructor, website builder, frontend platform, frontend framework' />
+		<link rel="stylesheet" href="style.css">
+		<!-- Twemoji <3 -->
+		<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+		<style> img.emoji { width: 1em; pointer-events: none } </style>
+	</head>
+	
+	<body id='body' class='center' onload="init(); langs(); slide('rawFrame', 'R', 3)" tabIndex=0 onclick>
+		<script src="main.js"></script>
+		
+		<div class='test' id='display'> <p style='margin: 5vmin'>Please insert [rawdata.txt] string into HTML tab to load.</p> </div>
+		
+		<div id='header' class='center bounded nosel'>
+			<div id='logo' class='bgCont'></div>
+			<div class='center bounded' style='flex: 1'>
+				<div class='btn center' style='border-top: 1vmin solid #7af' onclick="slide('rawFrame', 1)"><p>HTML</p></div>
+				<div class='btn center' style='border-top: 1vmin solid #fd5' onclick="slide('rawFrame', 2)"><p>CSS</p></div>
+				<div class='btn center' style='border-top: 1vmin solid #c5f; border-radius: 0 3vmin 3vmin 0' onclick="slide('rawFrame', 3)"><p>JS</p></div>
+			</div>
+		</div>
+		
+		<div class='test center' id='rawFrame1' style='border-top: 1vmin solid #7af'>
+			<textarea class='raw' id='raw1' spellcheck='false' oninput="rawinput(1)"></textarea>
+		</div>
+		<div class='test center slided' id='rawFrame2' style='border-top: 1vmin solid #fd5'>
+			<textarea class='raw' id='raw2' spellcheck='false' oninput="rawinput(2)"></textarea>
+		</div>
+		<div class='test center slided' id='rawFrame3' style='border-top: 1vmin solid #c5f'>
+			<textarea class='raw' id='raw3' spellcheck='false' oninput="rawinput(3)" value="">emi('display').style.background='#ccc'</textarea>
+		</div>
+		
+		<div id='controls' class='center bounded'>
+			<div class='center' onclick="save()"> <p style='border-right: 2px solid #000'>SAVE</p> </div>
+			<div class='center' onclick="loadRaw()"> <p style='border-right: 2px solid #000'>LOAD</p> </div>
+			<div class='center' onclick="emi('clearWarn').style.display='block'"> <p>CLEAR</p> </div>
+			<div class='center' onclick="parse()"> <p style='border-left: 2px solid #000'>RUN</p> </div>
+		</div>
+		
+		<div class='popup bounded center' id='clearWarn'>
+			<div class='popupHead center'> <p>Attention</p> </div>
+			<div class='popupBody center'> <p>Every tab in the editor will be cleared after proceeding.<br><br>Please save important information before clicking "Agree".</p> </div>
+			<div class='popupBtns center'>
+				<div class='center' onclick="emi('clearWarn').style.display='none'" style='background: #555'> <p>Cancel</p> </div>
+				<div class='center' onclick="emi('clearWarn').style.display='none'; clearAll()" style='background: #a33'> <p>Agree</p> </div>
+			</div>
+		</div>
+		
+		<script src="lang.js"></script>
+	</body>
+	
+</html>
