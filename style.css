@@ -90,7 +90,7 @@ body {
 	border-radius: 3vmin;
 	border: 1px solid var(--accentSub)
 }
-.x_raw {
+.raw {
 	width: 94%; height: 96%;
 	margin: auto; padding: 0;
 	border: none; outline: none;
