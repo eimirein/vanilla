@@ -72,25 +72,25 @@ body {
 /* Local objects */
 .slide { display: flex; animation: fadeout 0.3s }
 .slided { display: none; width: 0; height: 0; }
-#header {
+#x_header {
 	width: 90vw; height: 12vmin;
 	margin: 3vmin 0 0 0; background: #333;
 	border-radius: 3vmin;
 }
-#logo {
+#x_logo {
 	flex: 1; background-color: none;
 	background-image: url('assets/logo.webp')
 }
-.btn { flex: 1; transition: 0.3s; font: var(--fontTitle); border-left: 0.3vmin solid #000 }
-.btn:hover { background: #444 }
-.test {
+.x_btn { flex: 1; transition: 0.3s; font: var(--fontTitle); border-left: 0.3vmin solid #000 }
+.x_btn:hover { background: #444 }
+.x_test {
 	width: 96vw; height: 94vh;
 	background: #222;
 	margin: 3vmin 0 0 0;
 	border-radius: 3vmin;
 	border: 1px solid var(--accentSub)
 }
-.raw {
+.x_raw {
 	width: 94%; height: 96%;
 	margin: auto; padding: 0;
 	border: none; outline: none;
@@ -100,17 +100,17 @@ body {
 	font: var(--fontRaw);
 	background: none; color: #fff
 }
-#controls {
+#x_controls {
 	width: 60vw; height: 6vmin;
 	margin: 0 auto 3vmin auto;
 	background: var(--accentSub);
 	border-radius: 0 0 3vmin 3vmin;
 }
-#controls p { flex: 1 }
-#controls div { flex: 1; transition: 0.3s }
-#controls div:hover { color: #000; background: #eee }
+#x_controls p { flex: 1 }
+#x_controls div { flex: 1; transition: 0.3s }
+#x_controls div:hover { color: #000; background: #eee }
 
-.popup {
+.x_popup {
 	position: fixed; display: none;
 	left: 15vw; top: 15vh;
 	width: 70vw; height: 70vh;
