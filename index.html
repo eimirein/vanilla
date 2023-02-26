@@ -14,10 +14,10 @@
 	<body id='body' class='center' onload="init(); langs(); slide('rawFrame', 'R', 3)" tabIndex=0 onclick>
 		<script src="main.js"></script>
 		
-		<div class='test' id='display'> <p style='margin: 5vmin'>Please insert [rawdata.txt] string into HTML tab to load.</p> </div>
+		<div class='x_test' id='display'> <p style='margin: 5vmin'>Please insert [rawdata.txt] string into HTML tab to load.</p> </div>
 		
 		<div id='x_header' class='center bounded nosel'>
-			<div id='logo' class='bgCont'></div>
+			<div id='x_logo' class='bgCont'></div>
 			<div class='center bounded' style='flex: 1'>
 				<div class='btn center' style='border-top: 1vmin solid #7af' onclick="slide('rawFrame', 1)"><p>HTML</p></div>
 				<div class='btn center' style='border-top: 1vmin solid #fd5' onclick="slide('rawFrame', 2)"><p>CSS</p></div>
@@ -25,13 +25,13 @@
 			</div>
 		</div>
 		
-		<div class='test center' id='rawFrame1' style='border-top: 1vmin solid #7af'>
+		<div class='x_test center' id='rawFrame1' style='border-top: 1vmin solid #7af'>
 			<textarea class='raw' id='raw1' spellcheck='false' oninput="rawinput(1)"></textarea>
 		</div>
-		<div class='test center slided' id='rawFrame2' style='border-top: 1vmin solid #fd5'>
+		<div class='x_test center slided' id='rawFrame2' style='border-top: 1vmin solid #fd5'>
 			<textarea class='raw' id='raw2' spellcheck='false' oninput="rawinput(2)"></textarea>
 		</div>
-		<div class='test center slided' id='rawFrame3' style='border-top: 1vmin solid #c5f'>
+		<div class='x_test center slided' id='rawFrame3' style='border-top: 1vmin solid #c5f'>
 			<textarea class='raw' id='raw3' spellcheck='false' oninput="rawinput(3)" value="">emi('display').style.background='#ccc'</textarea>
 		</div>
 		
@@ -42,7 +42,7 @@
 			<div class='center' onclick="parse()"> <p style='border-left: 2px solid #000'>RUN</p> </div>
 		</div>
 		
-		<div class='popup bounded center' id='clearWarn'>
+		<div class='x_popup bounded center' id='clearWarn'>
 			<div class='popupHead center'> <p>Attention</p> </div>
 			<div class='popupBody center'> <p>Every tab in the editor will be cleared after proceeding.<br><br>Please save important information before clicking "Agree".</p> </div>
 			<div class='popupBtns center'>
